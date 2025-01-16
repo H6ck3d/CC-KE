@@ -1,8 +1,8 @@
 #include <iostream>
 #include <sstream>
 #include <ctime>
-#include "tinyxml2.cpp"
-#include "tinyxml2.h"
+#include "../lib/tinyxml2.cpp"
+#include "../lib/tinyxml2.h"
 
 std::string getCurrentDate()
 {
