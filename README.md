@@ -46,15 +46,17 @@ Dieses Projekt ist ein C++-Programm, das eine XML-Konfigurationsdatei für das A
 
 #### Windows
 
+```build_windows.bat``` oder folgende Befehle ausführen:
 ```bash
 mkdir build
 cd build
-cmake .. -G "MinGW Makefiles"
-mingw32-make
+cmake .. -G "Unix Makefiles" -DCMAKE_MAKE_PROGRAM="C:/Program Files (x86)/GnuWin32/bin/make.exe" -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
+make
 ```
 
 #### Linux
 
+```build_linux.sh``` oder folgende Befehle ausführen:
 ```bash
 mkdir build
 cd build
