@@ -4,6 +4,7 @@
 if [ ! -d "build" ]; then
     # Create the build directory if it doesn't exist
     mkdir build
+    cp src/example.xml build
 fi
 
 # Navigate to the build directory

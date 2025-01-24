@@ -4,6 +4,7 @@ REM Check if the build directory exists
 if not exist "build" (
     echo Creating build directory...
     mkdir build
+    copy .\src\example.xml .\build
 )
 
 REM Change to the build directory
