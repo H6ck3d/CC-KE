@@ -9,6 +9,13 @@ add_executable(CC-KE src/CC-KE.cpp lib/tinyxml2.cpp)
 # Include directories
 include_directories(lib)
 
+# Find and include CURL
+find_package(CURL REQUIRED)
+include_directories(${CURL_INCLUDE_DIRS})
+
+# Link CURL library
+target_link_libraries(CC-KE ${CURL_LIBRARIES})
+
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
