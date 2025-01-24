@@ -44,10 +44,31 @@ Dieses Projekt ist ein C++-Programm, das eine XML-Konfigurationsdatei für das A
 
 ## Kompilierung und Ausführung
 
-### Kompilierung
+#### Windows
 
 ```bash
-./build.sh
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles"
+mingw32-make
+```
+
+#### Linux
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+#### macOS
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
 ```
 
 ### Ausführung
